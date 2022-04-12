@@ -20,7 +20,7 @@ h1 {
   grid-template-columns: 150px 1fr;
 }
 
-#grid ol {
+#grid ul {
   border-right: 1px solid grey;
   width: 100px;
   margin: 0;
@@ -34,14 +34,28 @@ h1 {
 div > p {
   padding: 15px;
 }
+
+.nav {
+  padding-bottom: 10px;
+}
+
 @media (max-width: 800px) {
   #grid {
     display: block;
   }
-  #grid ol {
+
+  #grid ul {
     border-right: none;
+    background-color: rgb(192, 238, 217);
+    width: 100%;
+    padding: 5px;
   }
-  h1 {
-    border-bottom: none;
+
+  .nav {
+    border: 1px solid rgb(84, 253, 225);
+    display: inline-block;
+    padding: 3px;
+    margin: 5px;
+    background-color: rgb(84, 253, 225);
   }
 }
